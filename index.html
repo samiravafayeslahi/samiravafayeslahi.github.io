@@ -77,18 +77,51 @@
 
 <body>
 
-<h1>Samira Vafay Eslahi</h1>
+<div style="display:flex; gap:40px; align-items:flex-start;">
 
+  <!-- LEFT SIDEBAR (PHOTO + LINKS) -->
+  <div style="width:220px;">
 
-<div class="tabs">
-  <div class="tab active" onclick="showTab('about', this)">About</div>
-  <div class="tab" onclick="showTab('research', this)">Research</div>
-  <div class="tab" onclick="showTab('publications', this)">Publications</div>
-  <div class="tab" onclick="showTab('teaching', this)">Teaching</div>
-  <div class="tab" onclick="showTab('join', this)">Join Us</div>
-  
+    <img src="SamiraEslahi.jpeg"
+         alt="Profile photo"
+         style="width:180px; height:180px; border-radius:50%; object-fit:cover;">
+
+    <h3>Links</h3>
+
+    <p style="line-height:1.8;">
+      <a href="mailto:vafayeslahisamira@gmail.com">Email</a><br>
+      <a href="https://scholar.google.com/citations?user=ROUgTbgAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
+      <a href="https://www.linkedin.com/in/samiravafayeslahi/" target="_blank">LinkedIn</a>
+    </p>
+
+  </div>
+
+  <!-- RIGHT MAIN CONTENT -->
+  <div style="flex:1;">
+
+    <h1>Samira Vafay Eslahi</h1>
+
+    <!-- TABS -->
+    <div class="tabs">
+      <div class="tab active" onclick="showTab('about', this)">About</div>
+      <div class="tab" onclick="showTab('research', this)">Research</div>
+      <div class="tab" onclick="showTab('publications', this)">Publications</div>
+      <div class="tab" onclick="showTab('teaching', this)">Teaching</div>
+      <div class="tab" onclick="showTab('join', this)">Join Us</div>
+    </div>
+
+    <!-- SECTIONS -->
+    <div id="about" class="section active">...</div>
+    <div id="research" class="section">...</div>
+    <div id="publications" class="section">...</div>
+    <div id="teaching" class="section">...</div>
+    <div id="join" class="section">...</div>
+
+  </div>
+
 </div>
 
+</body>
 
 
 
