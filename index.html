@@ -4,46 +4,59 @@
   <title>Samira Vafay-Eslahi</title>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-    }
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+  }
 
-    /* Tabs */
-    .tabs {
-      display: flex;
-      gap: 20px;
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 20px;
-    }
+  /* Tabs */
+  .tabs {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
 
-    .tab {
-      cursor: pointer;
-      padding: 10px 0;
-      color: #004080;
-    }
+  .tab {
+    cursor: pointer;
+    padding: 10px 0;
+    color: #004080;
+  }
 
-    .tab:hover {
-      text-decoration: underline;
-    }
+  .tab:hover {
+    text-decoration: underline;
+  }
 
-    .tab.active {
-      font-weight: bold;
-      border-bottom: 2px solid #004080;
-    }
+  .tab.active {
+    font-weight: bold;
+    border-bottom: 2px solid #004080;
+  }
 
-    /* Sections */
-    .section {
-      display: none;
-    }
+  /* Sections */
+  .section {
+    display: none;
+  }
 
-    .section.active {
-      display: block;
-    }
-  </style>
+  .section.active {
+    display: block;
+  }
+
+  /* ✅ ADD THIS PART */
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+</style>
 </head>
 
 <body>
@@ -67,16 +80,12 @@
   
 <div id="about" class="section active">
 
-  <h2>About</h2>
-
   <div style="display:flex; align-items:flex-start; gap:20px;">
 
-    <!-- Left: Image -->
     <img src="SamiraEslahi.jpeg" 
          alt="Profile photo"
          style="width:180px; height:180px; border-radius:50%; object-fit:cover;">
 
-    <!-- Right: Text -->
     <div>
 
       <p><strong>About Me</strong></p>
