@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-  
 <head>
   <title>Samira Vafay-Eslahi</title>
 
@@ -14,7 +13,6 @@
     line-height: 1.6;
   }
 
-  /* Tabs */
   .tabs {
     display: flex;
     gap: 20px;
@@ -37,7 +35,6 @@
     border-bottom: 2px solid #004080;
   }
 
-  /* Sections */
   .section {
     display: none;
   }
@@ -45,15 +42,14 @@
   .section.active {
     display: block;
   }
-    
-    
+
   h1 {
     font-size: 22px;
     font-weight: 600;
     margin-top: 28px;
     margin-bottom: 12px;
   }
-    
+
   h2 {
     font-size: 20px;
     font-weight: 600;
@@ -67,22 +63,18 @@
     margin-top: 15px;
     margin-bottom: 12px;
   }
-    
+
   p {
     font-size: 16px;
     margin-top: 12px;
     margin-bottom: 12px;
     text-align: justify;
   }
-</style>
+  </style>
 </head>
 
-
-
-
-
-  
 <body>
+
 <h1>Samira Vafay Eslahi, Ph.D.</h1>
 
 <div class="tabs">
@@ -93,73 +85,54 @@
   <div class="tab" onclick="showTab('join', this)">Join Us</div>
 </div>
 
-  
+<!-- ABOUT -->
 <div id="about" class="section active">
-
   <div style="display:flex; align-items:flex-start; gap:30px;">
-
-
-    <img src="SamiraEslahi.jpeg" 
-         alt="Profile photo"
+    <img src="SamiraEslahi.jpeg"
          style="width:180px; height:180px; border-radius:50%; object-fit:cover;">
 
-
     <div style="flex:1;">
-
       <h1>About Me</h1>
 
       <p>
-        My name is Samira Vafay-Eslahi, and I will be joining the University of North Florida, College of Computing, Engineering and Construction, in Fall 2026 as an Assistant Professor in Electrical Engineering.
+        My name is Samira Vafay-Eslahi, and I will be joining the University of North Florida in Fall 2026 as an Assistant Professor in Electrical Engineering.
       </p>
 
       <p>
-        I received my Ph.D. in Electrical Engineering from Texas A&amp;M University, Department of Electrical & Computer Engineering in 2022.
+        I received my Ph.D. in Electrical Engineering from Texas A&amp;M University in 2022.
       </p>
 
       <p>
-        After completing my Ph.D., I conducted a two-year (2022–2024) postdoctoral research fellowship at the Gordon Center for Medical Imaging at Harvard Medical School and Massachusetts General Hospital.
+        After my Ph.D., I was a postdoc at Harvard Medical School and Massachusetts General Hospital (2022–2024).
       </p>
 
       <p>
-        In 2025, I joined Southern Illinois University Carbondale as an Assistant Professor of Practice, where I taught courses in Digital Image Processing, Signal Processing and Analysis, and Programming.
+        In 2025, I joined Southern Illinois University Carbondale as Assistant Professor of Practice.
       </p>
 
       <h1>Research Focus</h1>
-
-      <p>
-        My research group focuses on medical imaging, including signal and image processing and hardware design.
-      </p>
-
+      <p>Medical imaging, signal processing, and hardware design.</p>
     </div>
 
     <div style="min-width:160px;">
-
       <h3>Links</h3>
-
-      <p style="line-height:1.8;">
-         <a href="mailto:vafayeslahisamira@gmail.com">Email</a><br>
-        <a href="https://scholar.google.com/citations?user=ROUgTbgAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
-        <a href="https://www.linkedin.com/in/samiravafayeslahi/" target="_blank">LinkedIn</a>
+      <p>
+        <a href="mailto:vafayeslahisamira@gmail.com">Email</a><br>
+        <a href="https://scholar.google.com/citations?user=ROUgTbgAAAAJ&hl=en">Google Scholar</a><br>
+        <a href="https://www.linkedin.com/in/samiravafayeslahi/">LinkedIn</a>
       </p>
-
     </div>
-
   </div>
 </div>
 
-
-
-  
+<!-- RESEARCH -->
 <div id="research" class="section">
-
   <h1>Research Interest</h1>
 
-<p>
-  My research focuses on advancing medical imaging at the intersection of electrical engineering, computer science, and radiology.
-</p>
+  <p>My research focuses on medical imaging at the intersection of engineering and radiology.</p>
 
-    
-<h1>Research Projects</h1>
+  <h1>Research Projects</h1>
+  <ul>
     <li>
       Signal and Image Processing in Medical Imaging
       <ul>
@@ -172,168 +145,58 @@
   </ul>
 </div>
 
-
-
-
+<!-- PUBLICATIONS -->
 <div id="publications" class="section">
 
   <h1>Selected Publications</h1>
 
-
   <h2>Journal Articles</h2>
-    <li>
-      <strong>Vafay Eslahi, Samira</strong>, Jian Tao, and Jim Ji.
-      "An evolutionary neural architecture search for magnetic resonance image reconstructions."
-      <em>International Journal of Computer Assisted Radiology and Surgery</em> (2026): 1–9.
-    </li>
-
-    <li>
-      Liu, Xiaofeng, Thibault Marin, <strong>Samira Vafay Eslahi</strong>, Amal Tiss, Yanis Chemli, Yassir Najmaoui, Se-In Jang, Georges El Fakhri, and Jinsong Ouyang.
-      "Scan-wise generalized PET denoising with contrastive adversarial learning."
-      <em>Physics in Medicine & Biology</em> 71 (2026): 105030.
-    </li>
-
-    <li>
-      Lee, Wonil, Paul Kyu Han, Thibault Marin, Ismaël BG Mounime, <strong>Samira Vafay Eslahi</strong>, Yanis Djebra, Didi Chi et al.
-      "Free-breathing 3D cardiac extracellular volume (ECV) mapping using a linear tangent space alignment (LTSA) model."
-      <em>Magnetic Resonance in Medicine</em> 93, no. 2 (2025): 536–549.
-    </li>
-
-    <li>
-      Liu, Xiaofeng, <strong>Samira Vafay Eslahi</strong>, Thibault Marin, Amal Tiss, Yanis Chemli, Yongsong Huang, Keith A. Johnson, Georges El Fakhri, and Jinsong Ouyang.
-      "Cross noise level PET denoising with continuous adversarial domain generalization."
-      <em>Physics in Medicine & Biology</em> 69, no. 8 (2024): 085001.
-    </li>
-
-    <li>
-      <strong>Vafay Eslahi, Samira</strong>, and Jim Ji.
-      "Accelerated positive contrast MRI of interventional devices using parallel compressed sensing imaging."
-      <em>Magnetic Resonance Imaging</em> 60 (2019): 130–136.
-    </li>
+  <ul>
+    <li><strong>Vafay Eslahi, Samira</strong> ... MRI reconstruction (2026)</li>
+    <li>Liu et al. PET denoising (2026)</li>
+    <li>Lee et al. ECV mapping (2025)</li>
+    <li>Liu et al. domain generalization (2024)</li>
+    <li><strong>Vafay Eslahi, Samira</strong> MRI device imaging (2019)</li>
   </ul>
 
-
-<h2>Conference Proceedings</h2>
-  <li>
-    Liu, Xiaofeng, Yongsong Huang, Thibault Marin, Yanis Chemli, <strong>Samira Vafay Eslahi</strong>, Amal Tiss, Keith A. Johnson, Georges El Fakhri, and Jinsong Ouyang.
-    "Dual Prompting for Diverse Count-Level PET Denoising."
-    In <em>2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)</em>, pp. 1–5. IEEE, 2025.
-  </li>
-
-  <li>
-    Liu, Xiaofeng, Thibault Marin, <strong>Samira Vafay Eslahi</strong>, Amal Tiss, Yanis Chemli, Keith A. Johnson, Georges El Fakhri, and Jinsong Ouyang.
-    "Subject-aware PET Denoising with Contrastive Adversarial Domain Generalization."
-    In <em>IEEE Nuclear Science Symposium (NSS), Medical Imaging Conference (MIC), and RTSD</em>, IEEE, 2024.
-  </li>
-
-  <li>
-    Mounime, Ismaël BG, Wonil Lee, Thibault Marin, Paul K. Han, Yanis Djebra, <strong>Samira Vafay Eslahi</strong>, Pietro Gori, Elsa Angelini, Georges El Fakhri, and Chao Ma.
-    "Sparsity constrained linear tangent space alignment model (LTSA) for 3D cardiac extracellular volume mapping."
-    In <em>2024 IEEE International Symposium on Biomedical Imaging (ISBI)</em>, pp. 1–5. IEEE, 2024.
-  </li>
-
-  <li>
-    <strong>Vafay Eslahi, Samira</strong>, Caiyun Shi, Haifeng Wang, Yifeng Ye, Hanwei Chen, Guoxi Xie, and Jim Ji.
-    "Accelerated imaging for visualizing interventional devices using parallel acquisition and compressed sensing reconstruction."
-    In <em>Proc. ISMRM</em>, vol. 26, p. 1477, 2018.
-  </li>
-
-  <li>
-    <strong>Vafay Eslahi, Samira</strong>, Caiyun Shi, Haifeng Wang, Yifeng Ye, Hanwei Chen, Guoxi Xie, and Jim Ji.
-    "Imaging and Localizing Brachytherapy Seeds Using Positive Contrast MRI."
-    In <em>IEEE Engineering in Medicine and Biology Society (EMBC)</em>, Honolulu, HI, 2018.
-  </li>
-
-  <li>
-    <strong>Vafay Eslahi, Samira</strong>, Pranav Vaidik Dhulipala, Caiyun Shi, Guoxi Xie, and Jim X. Ji.
-    "Parallel compressive sensing in a hybrid space: application in interventional MRI."
-    In <em>2017 39th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</em>, pp. 3260–3263. IEEE, 2017.
-  </li>
-
-</ul>
-
+  <h2>Conference Proceedings</h2>
+  <ul>
+    <li>ISBI 2025 PET denoising</li>
+    <li>NSS/MIC 2024 PET denoising</li>
+    <li>ISBI 2024 LTSA model</li>
+    <li>EMBC 2018–2017 papers</li>
+  </ul>
 </div>
-  
 
-
-
-
-  
-
-    
+<!-- TEACHING -->
 <div id="teaching" class="section">
   <h1>Courses Taught</h1>
-
-  <h2>ECE 578, Digital Image Processing II, SIUC, 2026</h2>
-  <ul>
-    <li>Advanced image processing tools and algorithms, including image reconstruction, segmentation, registration, compression, restoration, denoising, and machine learning.</li>
-  </ul>
-
-  <h2>ECE 558, Digital Image Processing I, SIUC, 2025</h2>
-  <ul>
-    <li>Introduces fundamental concepts and techniques for analyzing, enhancing, and extracting information from digital images using computational methods.</li>
-    <li>Covers topics such as filtering, segmentation, feature extraction, and image transformation.</li>
-    <li>Includes hands-on projects utilizing MATLAB and Python to reinforce theoretical concepts through practical application.</li>
-  </ul>
-
-  <h2>BME 536, Biomedical Signal Analysis, SIUC, 2025</h2>
-  <ul>
-    <li>Explores methods for analyzing and processing physiological signals using Fourier transforms, time-frequency analysis, feature extraction, and machine learning techniques.</li>
-    <li>Engages students with real-world biomedical data, including ECG and EEG signals, to develop practical skills in signal interpretation and algorithm design for healthcare and research applications.</li>
-  </ul>
-
-  <h2>BME 533, Speech and Natural Language Processing, SIUC, 2025</h2>
-  <ul>
-    <li>Introduces core concepts in speech processing, including speech production, perception, auditory modeling, signal coding, and acoustic feature extraction.</li>
-    <li>Covers natural language processing topics such as text classification, language modeling, and sentiment analysis.</li>
-    <li>Explores advanced machine learning approaches including neural networks, transformers, and large language models.</li>
-  </ul>
-
-  <h2>ENGR 222, Computational Methods for Engineers and Technologists, SIUC, 2025</h2>
-  <ul>
-    <li>Introduces C++ programming and engineering problem-solving.</li>
-    <li>Covers control flow, functions, memory management, and data structures.</li>
-    <li>Explores object-oriented programming, inheritance, polymorphism, and the C++ Standard Library.</li>
-    <li>Includes hands-on exercises and projects applying computational methods to real-world engineering challenges.</li>
-  </ul>
-
+  <p>ECE, BME, and engineering courses at SIUC (2025–2026).</p>
 </div>
 
-
-
-  
-    
+<!-- JOIN -->
 <div id="join" class="section">
   <h1>Prospective Students</h1>
 
   <p>
-    I am recruiting two Master of Science in Electrical Engineering (MSEE) students to join my research group at the University of North Florida (UNF), College of Computing, Engineering and Construction, starting in Spring 2027 or Fall 2027.
-  The group will work on medical imaging techniques, including image and signal processing, deep learning, and medical imaging hardware design and development.
+    I am recruiting MSEE students starting Spring/Fall 2027 at UNF.
   </p>
 
-<p class="focus-text">
-  <h1>Research focus</h1> MRI reconstruction, medical image processing, and medical image analysis.
-</p>
+  <p>
+    Research focus: MRI reconstruction, medical image processing, and analysis.
+  </p>
 </div>
-
-
-
-
-  
 
 <script>
 function showTab(id, element) {
-  // hide all sections
   document.querySelectorAll('.section').forEach(sec => {
     sec.classList.remove('active');
   });
 
-  // remove active from tabs
   document.querySelectorAll('.tab').forEach(tab => {
     tab.classList.remove('active');
   });
 
-  // show selected section
   document.getElementById(id).classList.add('active');
   element.classList.add('active');
 }
