@@ -72,15 +72,22 @@
   }
 
 
+.container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
 .sidebar {
-  position: fixed;
-  top: 50px;
-  left: 40px;
   width: 220px;
+  flex-shrink: 0;
 }
 
 .main {
-  margin-left: 280px;
+  flex: 1;
 }
   </style>
 </head>
