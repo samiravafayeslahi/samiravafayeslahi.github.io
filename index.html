@@ -82,12 +82,14 @@
 }
 
 .sidebar {
+  position: fixed;
+  top: 40px;
   width: 220px;
-  flex-shrink: 0;
 }
 
 .main {
-  flex: 1;
+  margin-left: 280px; /* sidebar width + spacing */
+  max-width: 800px;
 }
   </style>
 </head>
