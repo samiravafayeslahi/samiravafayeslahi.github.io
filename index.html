@@ -151,11 +151,11 @@
 <!-- RIGHT SIDEBAR -->
 <div class="main">  
 <div class="tabs">
-  <div class="tab active" onclick="showTab('about', this)">About</div>
-  <div class="tab" onclick="showTab('research', this)">Research</div>
-  <div class="tab" onclick="showTab('publications', this)">Publications</div>
-  <div class="tab" onclick="showTab('teaching', this)">Teaching</div>
-  <div class="tab" onclick="showTab('join', this)">Join Us</div>
+    <div class="tab active" id="tab-about" onclick="showTab('about', this)">About</div>
+    <div class="tab" id="tab-research" onclick="showTab('research', this)">Research</div>
+    <div class="tab" id="tab-publications" onclick="showTab('publications', this)">Publications</div>
+    <div class="tab" id="tab-teaching" onclick="showTab('teaching', this)">Teaching</div>
+    <div class="tab" id="tab-join" onclick="showTab('join', this)">Join Us</div>
 </div>
 
 
@@ -187,7 +187,7 @@
 
       <h1>Research Focus</h1>
       <p>
-  My <a href="#research">research</a> focuses on medical imaging, signal and image processing, machine learning, and neuroimaging.
+  My <a href="#" onclick="showTab('research', document.getElementById('tab-research')); return false;">research</a> focuses on medical imaging, signal and image processing, machine learning, and neuroimaging.
 </p>
 
     </div>
@@ -417,7 +417,7 @@
 <div id="join" class="section">
   <h1>Join Us</h1>
   <p>
-I am recruiting two Master of Science in Electrical Engineering (MSEE) students interested in the following research areas: medical imaging, signal and image processing, machine learning, and medical imaging hardware design and construction, to join my research group at the <a href="https://www.unf.edu/" target="_blank" rel="noopener noreferrer">University of North Florida (UNF)</a> for Fall 2026 or Spring 2027.  </p>. If you are interested in joining the group, please <a href="mailto:vafayeslahisamira@gmail.com">email</a> me with your CV and a brief description of your research interests.
+I am recruiting two Master of Science in Electrical Engineering (MSEE) students interested in the following research areas: medical imaging, signal and image processing, machine learning, and medical imaging hardware design and construction, to join my research group at the <a href="https://www.unf.edu/" target="_blank" rel="noopener noreferrer">University of North Florida (UNF)</a> for Fall 2026 or Spring 2027. If you are interested in joining the group, please <a href="mailto:vafayeslahisamira@gmail.com">email</a> me with your CV and a brief description of your research interests.
   </p>
 </div>
 
