@@ -214,7 +214,7 @@ a:active {
       </p>
 
 <h2>
-  <a href="#research" onclick="showTab('research', document.getElementById('tab-research')); return false;">
+  <a href="#" onclick="showTab('research', document.getElementById('tab-research')); return false;">
     Research
       
   </a>
@@ -513,8 +513,25 @@ function showTab(id, element) {
 
   document.getElementById(id).classList.add('active');
   element.classList.add('active');
+
+  // Remember the selected tab
+  localStorage.setItem('selectedTab', id);
 }
+
+// Restore the selected tab when the page is refreshed
+window.addEventListener('DOMContentLoaded', function() {
+  const savedTab = localStorage.getItem('selectedTab');
+
+  if (savedTab) {
+    const tabElement = document.getElementById('tab-' + savedTab);
+
+    if (tabElement && document.getElementById(savedTab)) {
+      showTab(savedTab, tabElement);
+    }
+  }
+});
 </script>
+
 
 </body>
 </html>
