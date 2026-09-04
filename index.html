@@ -514,13 +514,19 @@ function showTab(id, element) {
   document.getElementById(id).classList.add('active');
   element.classList.add('active');
 
-  // Remember the selected tab
   localStorage.setItem('selectedTab', id);
 }
 
-// Restore the selected tab when the page is refreshed
 window.addEventListener('DOMContentLoaded', function() {
-<script> function showTab(id, element) { document.querySelectorAll('.section').forEach(sec => { sec.classList.remove('active'); }); document.querySelectorAll('.tab').forEach(tab => { tab.classList.remove('active'); }); document.getElementById(id).classList.add('active'); element.classList.add('active'); } </script>
+  const savedTab = localStorage.getItem('selectedTab');
+
+  if (savedTab) {
+    const tabElement = document.getElementById('tab-' + savedTab);
+
+    if (tabElement && document.getElementById(savedTab)) {
+      showTab(savedTab, tabElement);
+    }
+  }
 });
 </script>
 
