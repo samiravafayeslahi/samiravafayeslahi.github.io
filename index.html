@@ -513,8 +513,29 @@ function showTab(id, element) {
 
   document.getElementById(id).classList.add('active');
   element.classList.add('active');
+
+  // Update URL without reloading the page
+  history.replaceState(null, '', '#' + id);
 }
+
+
+// Open the correct tab when the page loads
+window.addEventListener('DOMContentLoaded', function() {
+  const hash = window.location.hash.substring(1);
+
+  if (hash && document.getElementById(hash)) {
+    const tabElement = document.getElementById('tab-' + hash);
+
+    if (tabElement) {
+      showTab(hash, tabElement);
+    }
+  } else {
+    // Default to About
+    showTab('about', document.getElementById('tab-about'));
+  }
+});
 </script>
+
 
 
 
