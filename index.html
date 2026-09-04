@@ -513,22 +513,9 @@ function showTab(id, element) {
 
   document.getElementById(id).classList.add('active');
   element.classList.add('active');
-
-  localStorage.setItem('selectedTab', id);
 }
-
-window.addEventListener('DOMContentLoaded', function() {
-  const savedTab = localStorage.getItem('selectedTab');
-
-  if (savedTab) {
-    const tabElement = document.getElementById('tab-' + savedTab);
-
-    if (tabElement && document.getElementById(savedTab)) {
-      showTab(savedTab, tabElement);
-    }
-  }
-});
 </script>
+
 
 
 </body>
